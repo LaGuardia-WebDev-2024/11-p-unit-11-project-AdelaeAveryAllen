@@ -6,7 +6,7 @@ Requirements
 [  ] Include Three Images
 
 Select ONE Additional 
-[ no ] Feature 1 - Use .hide() & .show() method
+[ yes ] Feature 1 - Use .hide() & .show() method
 [ no ] Feature 2 - Use .addClass() method
 [ no ] Feature 3 - Use .slideDown() method
 [ no ] Feature 4 - Use .mouseover() method
@@ -28,41 +28,60 @@ Select ONE Additional
     <ol>
       <li>
         <h3 id="mem1">Memory #1</h3>
-        <p #=mem1-button>Stranger Things Finale, First Party. </p>
+        <div class="hello">
+        <p>Stranger Things Finale, First Party, Ice Cream. </p>
         <p>📍 Location Manhattan, NY.</p>
         <p>🤗 People: Shayna </p>
+
+        </div>
+
+
       </li>
 
       <li>
         <h3 id="mem2">Memory #2</h3>
-        <p>More about this memory.</p>
+        <div class="what">
+        <p>Hair braiding, Laughing, Wavelength.</p>
+        <p>📍 Location LaG 5th floor</p>
+        <p>🤗 People: Alexis</p>
+        </div>
       </li>
 
       <li>
         <h3 id="mem3">Memory #3</h3>
-        <p>More about this memory</p>
+        <div class="up">
+        <p>Beach, Rollercosters, Percy Jackson.</p>
+        <p>📍 San Diego</p>
+        <p>🤗 People: Family</p>
+        </div>
       </li>
     </ol>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
 
+      $(".hello").hide()
       // ======================== Button #1
       $("#mem1-button").click(function () {
         $("#mem1").css("color", "purple");
           $("#mem1").text("New Year's");
+           $(".hello").show(1000)
       });
 
+      $(".what").hide()
       // ======================== Button #2
       $("#mem2-button").click(function () {
         $("#mem2").css("color", "blue");
         $("#mem2").text("3rd Period with Alexis");
+        $(".what").show(1000)
       });
 
+      $(".up").hide()
       // ======================== Button #3
       $("#mem3-button").click(function () {
         $("#mem3").css("color", "green");
         $("#mem3").text("Spring Brake in Cali! ");
+        $(".up").show(1000)
       });
 
 
