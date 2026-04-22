@@ -10,3 +10,12 @@ html {
 h1 {
   font-family: "Poetsen One", sans-serif;
 }
+button:hover{
+  background-color: #ADD8E6;
+}
+img {
+  border: 3px solid black
+}
+h3 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
